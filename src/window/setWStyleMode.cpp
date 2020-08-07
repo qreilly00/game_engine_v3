@@ -1,5 +1,5 @@
 #include "Window.hpp"
 
-void Window::setWStyleMode(int wStyleMde) {
-    wStyleMode = wStyleMde;
+void Window::setWStyleMode(int input) {
+    wStyleMode = input;
 }

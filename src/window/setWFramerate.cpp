@@ -1,5 +1,5 @@
 #include "Window.hpp"
 
-void Window::setWFramerate(int wFrmrte) {
-    wFramerate = wFrmrte;
+void Window::setWFramerate(int input) {
+    wFramerate = input;
 }

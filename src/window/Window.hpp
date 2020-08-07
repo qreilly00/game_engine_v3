@@ -12,6 +12,8 @@ private:
 	sf::Vector2i wSize;
 	sf::Vector2i wPosition;
 
+	sf::Color wColor;
+
 	std::string wName;
 
 	int wFramerate; // 0 = noLimit
@@ -24,7 +26,7 @@ public:
 
 	// class initializer
 	Window();
-	Window(sf::Vector2i wSze, sf::Vector2i wPos, std::string wNme, int wFrmrte, int wStyleMde);
+	Window(sf::Vector2i wSze, sf::Vector2i wPos, std::string wNme, int wFrmrte, int wStyleMde, sf::Color wClr);
 
 	// window control functions
 	void createWindow();
@@ -42,19 +44,21 @@ public:
 	void getEvents();
 
 	// variable control functions
-	void setWSize(sf::Vector2i wSze);
-	void setWPosition(sf::Vector2i wPos);
-	void setWName(std::string wNme);
-	void setWFramerate(int wFrmrte);
-	void setWStyleMode(int wStyleMde);
+	void setWSize(sf::Vector2i input);
+	void setWPosition(sf::Vector2i input);
+	void setWName(std::string input);
+	void setWFramerate(int input);
+	void setWStyleMode(int input);
+	void setWColor(sf::Color input);
 
 	sf::Vector2i getWSize();
 	sf::Vector2i getWPosition();
 	std::string getWName();
 	int getWFramerate();
 	int getWStyleMode();
+	sf::Color getWColor();
 
-	std::vector<bool>& getUserInputs();
+	std::vector<bool> getUserInputs();
 	void resetUserInputs();
 
 };

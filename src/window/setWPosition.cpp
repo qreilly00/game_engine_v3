@@ -1,5 +1,5 @@
 #include "Window.hpp"
 
-void Window::setWPosition(sf::Vector2i wPos) {
-    wPosition = wPos;
+void Window::setWPosition(sf::Vector2i input) {
+    wPosition = input;
 }
