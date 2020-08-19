@@ -27,11 +27,11 @@ env1 = Environment(CCFLAGS = '-std=c++11 -pthread -Ilib/SFML-2.5.1/include')
 if bld == 0: # 0 = test
 	VariantDir(varObj0, varSrc0, duplicate = 0) # set object and source folder
 	trg = varTrg0 # set target directory
-	src = [varObj0 + 'main.cpp', Glob(varObj0 + '/window/*.cpp')] # set all source files
+	src = [varObj0 + 'main.cpp', Glob(varObj0 + '/window/*.cpp'), Glob(varObj0 + '/sprite/*.cpp')] # set all source files
 elif bld == 1: # 1 = release
 	VariantDir(varObj1, varSrc0, duplicate = 0) # set object and source folder
 	trg = varTrg1 # set target directory
-	src = [varObj1 + 'main.cpp', Glob(varObj1 + '/window/*.cpp')] # set all source files
+	src = [varObj1 + 'main.cpp', Glob(varObj1 + '/window/*.cpp'), Glob(varObj1 + '/sprite/*.cpp')] # set all source files
 
 if env == 0: # 0 = c++
     env0.Program(target = trg, source = src) # create program without sfml

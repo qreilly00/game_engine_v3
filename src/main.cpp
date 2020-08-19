@@ -9,6 +9,8 @@ Main execution loop will be in main or in a class of its own.
 It is important to make each class as accessible and independent as
 possible so that they can be integrated into the loop.
 
+Next time, test to see if you can call a class of an object in the function of another object.
+
 */
 
 int main() {

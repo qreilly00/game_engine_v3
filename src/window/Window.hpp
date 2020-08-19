@@ -16,11 +16,12 @@ private:
 
 	std::string wName;
 
+	std::vector<bool> userInputs; // 0 = window close, 1 = W, 2 = S, 3 = A, 4 = D, 5 = E, 6 = Q, 7 = space, 8 = tab, 9 = escape
+
 	int wFramerate; // 0 = noLimit
 	int wStyleMode; // 0 = none, 1 = titlebar and close, 2 = fullscreen, 3 = default (titlebar, resize and close)
 
 	sf::Event event;
-	std::vector<bool> userInputs; // 0 = window close, 1 = W, 2 = S, 3 = A, 4 = D, 5 = E, 6 = Q, 7 = space, 8 = tab, 9 = escape
 
 public:
 
